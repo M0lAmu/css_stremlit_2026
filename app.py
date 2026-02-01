@@ -139,7 +139,7 @@ with tab1:
             "Macro": ["Protein", "Fats", "Carbs"],
             "Percentage": [protein_pct, fat_pct, carb_pct]
         })
-        st.bar_chart(macro_data, x="Macro", y="Percentage", color=["Macro"])
+        st.bar_chart(macro_data, x="Macro", y="Percentage", color="Macro")
         
         # Calculate Grams
         p_grams = (target_calories * (protein_pct/100)) / 4
@@ -201,4 +201,5 @@ with tab4:
         "Excuse me, do you have a permit for those guns? 💪"
     ]
     st.info(random.choice(quotes))
+
 
